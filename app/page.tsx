@@ -20,7 +20,6 @@ export default function Home() {
         {/* @ts-ignore - Ignoring TypeScript error for custom web components */}
         <model-viewer
           src="/models/cupcake.glb"
-          ios-src="/models/cupcake.usdz"
           alt="A 3D model of a cupcake"
           ar
           ar-modes="webxr scene-viewer quick-look"
