@@ -17,9 +17,9 @@ export default function Home() {
       {/* The AR Container */}
       <div className="w-full max-w-md h-[500px] bg-white rounded-2xl shadow-xl overflow-hidden relative border border-gray-100">
 
-        {/* @ts-ignore - Ignoring TypeScript error for custom web components */}
         <model-viewer
           src="/models/cupcake.glb"
+          ios-src="/models/cupcake.usdz"
           alt="A 3D model of a cupcake"
           ar
           ar-modes="webxr scene-viewer quick-look"
@@ -31,11 +31,10 @@ export default function Home() {
           {/* Custom AR Button */}
           <button
             slot="ar-button"
-            className="absolute bottom-6 left-1/2 transform -translate-x-1/2 bg-blue-600 text-white px-8 py-3 rounded-full font-bold shadow-lg hover:bg-blue-700 transition-colors"
+            className="absolute bottom-5 left-1/2 transform -translate-x-1/2 bg-blue-600 text-white px-6 sm:px-8 py-3 rounded-full font-bold shadow-lg hover:bg-blue-700 active:scale-95 transition-all text-sm sm:text-base whitespace-nowrap"
           >
             📸 View on your table
           </button>
-          {/* @ts-ignore */}
         </model-viewer>
 
       </div>
